@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me!</title>
+    <link rel="stylesheet" href="Aboutme.css">
+</head>
+<body>
+     <nav>
+         <ul>
+            <li>
+                <a href="Projects.html">My Projects!</a>
+            </li>
+            <li>
+                <a href="Aboutme.html">About Me!</a>
+            </li>
+            <li>
+                <a href="Contacts.html">Contact!</a>
+            </li>
+         </ul>
+    </nav>
+    <header>
+        <div class="center">
+            <h1>Hi there! look down here!</h1>
+        </div>
+        <div class="center">
+            <img id="logo" class="page-load-spin" src="./img1/my logo reverse.png" alt="Logo" onclick="spinLogo()" />
+            <div class="mspaces"></div>
+            <h2>who am i?</h2>
+        </div>
+        <div class="center">
+            <div class="size">
+            <div class ="text-box">
+            <p>Hi!, my name is Joaquim, I’m 16 years old and I’m a Brazilian student. Since I was a kid, I’ve always been fascinated by everything related to engineering, electronics, and technology. While most people were playing video games, I was already taking things apart, building crazy projects, and trying to figure out how the world works from the inside.</p>
+
+            <p>Over time, that passion only grew stronger. I’ve already developed hundreds of codes, gadgets, and projects — and honestly, I never stop. There’s always a new idea popping up, a component I want to test, or a system I want to improve. It feels like my brain is a workshop that never closes.</p>
+
+            <p>My goals are big: I want to become a mechatronics engineer, explore the world, and hopefully one day work at NASA, helping to build probes, satellites, hovers, and everything else that pushes the boundaries of space exploration.</p>
+
+            <p>So far, I’ve participated in two tech competitions, I’m part of Hack Club, and I’m currently taking an electromechanical technical course. Each of these experiences makes me more certain that I’m on the right path and that there’s still so much more to achieve.</p>
+
+            <p>That’s me: curious, restless, and passionate about creating. Thanks for visiting my page and learning a bit about my journey. If you want to check out more of my projects and ideas, take a look at my other pages — there’s always something new going on!</p>
+
+            <p>"I don't have only dreams, i have goals, and im gonna conquest every single one of them."</p>
+
+            </div>
+        </div>
+    </header>
+</body>
+<script>
+    function spinLogo() {
+        const logo = document.getElementById('logo');
+        logo.style.animation = 'none';
+        logo.offsetHeight; /* Trigger reflow */
+        logo.style.animation = 'spin 1s ease-in-out';
+    }
+</script>
+</html>

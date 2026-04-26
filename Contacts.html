@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me!</title>
+    <link rel="stylesheet" href="Contacts.css">
+</head>
+<body>
+     <nav>
+         <ul>
+            <li>
+                <a href="Projects.html">My Projects!</a>
+            </li>
+            <li>
+                <a href="Aboutme.html">About Me!</a>
+            </li>
+            <li>
+                <a href="Contacts.html">Contact!</a>
+            </li>
+         </ul>
+    </nav>
+    <header>
+        <div class="center">
+            <h1>Contact me!!</h1>
+        </div>
+        <div class="center">
+            <img id="logo" class="page-load-spin" src="./img1/my logo reverse.png" alt="Logo" onclick="spinLogo()" />
+            <div class="mspaces"></div>
+            <h2>Here you can find all my contacts, if you want to talk to me, just send a message in one of these platforms!</h2>
+            <div class="mspaces"></div>
+
+            <b1>
+            <div class="left">
+                <img class="oss" src="./Icons svg/email-svgrepo-com.svg" alt="Rede1"></img>
+            </div>
+            <div class="varia-1">
+            <div class="right">
+                <p>My email is: joaquim.nicacio@outlook.com</p>
+                </div>
+            </div>
+            </b1>
+            <b2>
+                <div class="varia-1">
+            <div class="right">
+                <p>My discord is: N1kamaro</p>
+            </div>
+            </div>
+            <div class="right">
+                <img class="oss" src="./Icons svg/discord-icon-svgrepo-com.svg" alt="Rede2"></img>
+                </div>
+            </div>
+            </b2>
+
+
+        </div>
+    </header>
+</body>
+<script>
+    function spinLogo() {
+        const logo = document.getElementById('logo');
+        logo.style.animation = 'none';
+        logo.offsetHeight; /* Trigger reflow */
+        logo.style.animation = 'spin 1s ease-in-out';
+    }
+</script>
+</html>

@@ -1,0 +1,267 @@
+
+body {
+    min-height: 270vh; /* altura minima da página */
+    color: whitesmoke;
+    background: linear-gradient(to bottom, black 35%, rgba(255, 255, 255, 0.753)); 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Animação de rotação para a imagem */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Estilização para a barra de navegação */
+nav {
+    padding: 16px 0;
+}
+
+/* Estilização para a lista de navegação */
+.gr{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.103), rgba(0, 0, 0, 0.438));
+}
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    list-style-type: none;
+    align-items: center;
+    padding: 18px 24px;
+    background: linear-gradient(to right, rgba(255,255,255,0.08), rgba(255,255,255,0.18));
+    border-radius: 50px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Estilização para os itens da barra de navegação */
+ol {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    list-style-type: none;
+    align-items: center;
+    padding: 18px 24px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.795), rgba(255, 255, 255, 0.671));
+    border-radius: 50px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Estilização para os itens da barra de navegação */
+li {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 16px 38px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+/* Efeito de hover para os itens da barra de navegação */
+li:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.2);
+}
+/*decoração dos links*/
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+/*estrelinha do logo*/
+img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* Imagem dos projetos */
+img.ins {
+    width: 350px;
+    height: 350px;
+    min-width: 350px;
+    min-height: 350px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Aplica a animação de rotação à imagem com a classe "page-load-spin" ou "click-spin" , vulgo tecnologia alienigena q eu ainda n entendo bem*/
+img.page-load-spin,
+img.click-spin {
+    animation: spin 0.8s ease-out 1;
+}
+
+
+/* centralização do texto */
+.center{ 
+    text-align: center;
+}
+
+/* Quadrado centralizado para texto */
+.text-box {
+    max-width: 800px; /* limite lateral máximo */
+    width: 90%; /* responsivo */
+    margin: 40px auto; /* centralizado horizontalmente */
+    padding: 30px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.185), rgba(0, 0, 0, 0.267));
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* alinhamento do texto para direita */
+.right{
+    text-align: right;
+}
+
+/* alinhamento do texto para esquerda */
+.left{
+    text-align: left;
+}
+
+/* estilização dos títulos */
+h1 {
+    font-size: 4em;
+}
+
+/* espaçamento entre os títulos e os projetos */
+h2 {
+    font-size: 2.0em;
+    margin-top: 60px;
+}
+
+h3 {
+    font-size: 2.0em;
+}
+/* espacamento no geral */           
+.mspaces {
+    margin-bottom: 200px;
+}
+
+.lspaces {
+    margin-bottom: 150px;
+}
+
+a1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 40px;
+    background: linear-gradient(to right, rgba(255,255,255,0.08), rgba(255,255,255,0.18));
+    border-radius: 50px;
+    /* === LARGURA === */
+    /* max-width: 60% -> muda esse valor para aumentar/diminuir a largura (em %) */
+    max-width: 57%;
+    /* === ALTURA === */
+    /* min-height: 200px -> muda esse valor para aumentar/diminuir a altura (em px) */
+    min-height: 300px;
+    /* margin: 0 auto 50px 0 -> o "0" no final é a margem esquerda, o "auto" é a margem direita */
+}
+
+b1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px 40px;
+    background: linear-gradient(to right, rgba(255,255,255,0.08), rgba(255,255,255,0.18));
+    border-radius: 50px;
+    /* === LARGURA === */
+    /* max-width: 60% -> muda esse valor para aumentar/diminuir a largura (em %) */
+    max-width: 57%;
+    /* === ALTURA === */
+    /* min-height: 200px -> muda esse valor para aumentar/diminuir a altura (em px) */
+    min-height: 300px;
+    /* margin: 0 auto 50px 0 -> o "0" no final é a margem esquerda, o "auto" é a margem direita */
+    margin: 0 auto 50px 0;
+}
+
+b2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 40px;
+    background: linear-gradient(to right, rgba(255,255,255,0.08), rgba(255,255,255,0.18));
+    border-radius: 50px;
+    /* === LARGURA === */
+    /* max-width: 60% -> muda esse valor para aumentar/diminuir a largura (em %) */
+    max-width: 57%;
+    /* === ALTURA === */
+    /* min-height: 200px -> muda esse valor para aumentar/diminuir a altura (em px) */
+    min-height: 300px;
+    /* margin: 0 0 50px auto -> o "auto" no final é a margem direita, o "0" é a margem esquerda */
+    margin: 0 0 50px auto;
+}
+
+/* Container interno do projeto (imagem + texto) */
+.project-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+/* Texto do projeto (título + descrição) */
+.project-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+/* Alinhamento centralizado do texto */
+b1 .project-text {
+    text-align: center;
+    padding: 0 30px;
+}
+
+b2 .project-text {
+    text-align: center;
+    padding: 0 30px;
+}
+
+/* Título no topo do quadrado */
+.project-text h3 {
+    margin: 0 0 20px 0;
+    padding-top: 10px;
+    align-self: center;
+    font-size: 1.4em;
+}
+
+/* Descrição centralizada no espaço disponível */
+.project-text p {
+    margin: 0;
+    align-self: center;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+/* Imagem no extremo oposto do texto */
+b1 .ins {
+    flex-shrink: 0;
+    align-self: center;
+}
+
+b2 .ins {
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.size {
+   font-size: 1.7em; /* ajuste a altura conforme necessário */
+}

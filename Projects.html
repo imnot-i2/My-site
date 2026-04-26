@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+         <ul>
+            <li>
+                <a href="Projects.html">My Projects!</a>
+            </li>
+            <li>
+                <a href="Aboutme.html">About Me!</a>
+            </li>
+            <li>
+                <a href="Contacts.html">Contact!</a>
+            </li>
+         </ul>
+    </nav>
+    <header>
+        <div class="center">
+            <h1>Hi!, please take a seat!</h1>
+            <img id="logo" class="page-load-spin" src="./img1/my logo reverse.png" alt="Logo" />
+        </div>
+        <div class="center">
+            <h2>Down here i have some of the projects that i have made and the history behind them!</h2>
+        </div>
+    </header>
+<div class="spaces"></div>
+
+   <main>
+    <section>
+        
+        <!-- Projeto 1: quadrado da esquerda, imagem na direita, texto na esquerda -->
+        <b1>
+            <div class="project-content">
+                <div class="project-text">
+                    <h3>Water Generator</h3>
+                    <p>In 2025, I joined a group at my school to take part in a national competition called Hackanav. Each year brings new themes and challenges, and that year was no different—the focus was on using creativity to help people during natural disasters. My role was to design something tangible, so I took charge of developing both the theory and the physical concept of a real water generator.
+
+After some research, I realized the most effective way to create a machine capable of producing water was by harnessing the air itself, using Peltier modules and the condensation process. The goal wasn’t to deliver a finished product, but to demonstrate the concept—and that’s exactly what I did!</p>
+                </div>
+                <img class="ins" src="./img2/gen1.jpeg" alt="Projeto 1">
+            </div>
+        </b1>
+<div class="spaces"></div>
+
+        <!-- Projeto 2: quadrado da direita, imagem na esquerda, texto na direita -->
+        <b2> 
+            <div class="project-content">
+                <img class="ins" src="./img2/B-star.jpeg" alt="Projeto 2">
+                <div class="project-text">
+                    <h3>smoochiee-board (esp32-s3)</h3>
+                    <p>This is an open-source hardware project designed for educational purposes, aiming to explore and understand what is radio frequency comunnication, utilizing an Esp32-S3 microcontroller, an Nrf24L01 transceiver, an C1101 transceiver module, an display st7735, five buttons, some resistors, and a power supply and voilà, there it is, i worked in this project for three weeks and some days, the schematics were kinda hard, but everythings working fine now!</p>
+                </div>
+            </div>
+        </b2>    
+<div class="spaces"></div>
+        
+        <!-- Projeto 3: quadrado da esquerda, imagem na direita, texto na esquerda -->
+        <b1>
+            <div class="project-content">
+                <div class="project-text">
+                    <h3>Portifolio site</h3>
+                    <p>This is the first website ive ever built, marking the start of my journey with HTML and CSS. I learned how to structure pages with HTML and bring them to life with CSS. Simple, but meaningful—it’s my first step into web development.</p>
+                </div>
+                <img class="ins" src="./img2/siteprint.png" alt="Projeto 3">
+            </div>
+        </b1>    
+<div class="spaces"></div>
+
+    </section>
+   </main>
+
+<footer>
+
+ <ol>
+    <li>
+        <a href="Projects.html">Jump to the top here!</a>
+    </li>
+ </ol>
+
+</footer>
+
+    <script>
+        const logo = document.getElementById('logo');
+        if (logo) {
+            logo.addEventListener('click', () => {
+                logo.classList.remove('click-spin');
+                window.requestAnimationFrame(() => {
+                    logo.classList.add('click-spin');
+                });
+            });
+
+            logo.addEventListener('animationend', (event) => {
+                if (event.animationName === 'spin') {
+                    logo.classList.remove('page-load-spin');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
